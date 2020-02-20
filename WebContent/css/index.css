@@ -1,0 +1,21 @@
+*{
+	box-sizing: border-box;
+ }
+
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+
+#mensagens-erro {
+	color: red;
+}
+
+.invisivel{
+	display: none;
+}
+
+#erro-ajax {
+	color: red;
+}

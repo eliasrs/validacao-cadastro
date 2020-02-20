@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../webcontent/materialize/css/materialize.min.css"  media="screen,projection"/>
+      <!-- minhas customizações -->
+      <link type="text/css" rel="stylesheet" href="../webcontent/css/index.css"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="UTF-8">
+    </head>
+
+    <body>
+    	<section class="container">
+    		  <nav class="nav-extended">
+			    				<!-- value=1 onclick="exibeArea(this.value) value=2 onclick="exibeArea(this.value)" -->
+			    <div class="nav-content">
+			      <ul class="tabs tabs-transparent">
+			        <li id="menu1" class="tab" ><a class="active"  href="">Pendentes de validação</a></li>
+			        <li id="menu2" class="tab" ><a class="active"  href="">Validados</a></li>
+			      </ul>
+			    </div>
+			  </nav>
+
+
+    	<!-- para contendo os précadastros - pendentes de validação -->
+    		  <section id="cad1" class="">
+	    		<div style="padding-top: 60px; padding-bottom: 15px">
+					<h5>Validação de pré-cadastros</h5>
+				</div>
+				<div class="row">
+		          <div class="input-field col s3">
+		            <input id="filtrar-tabela" type="text">
+		            <label for="filtrar-tabela">Pesquisar usuário</label>
+		          </div>
+		        </div>
+	    		<table class="responsive-table highlight">
+			      <thead>
+			        <tr class="table-success">
+				      <th scope="col">CPF</th>
+				      <th scope="col">Nome</th>
+				      <th scope="col">Email</th>
+				      <th scope="col">Vínculo PJ</th>
+				      <th scope="col">Visualizar</th>
+				    </tr>
+				  </thead>
+				  <tbody id="tabela-usuarios">
+			           <tr class="usuario">
+					      <td class="info-cpf">065.256.936.67</th>
+					      <td class="info-nome">Jacob</td>
+					      <td class="info-email">@Otto</td>
+					      <td class="info-pj">IBAMA</td>
+					      <td><a href="#" ><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    <tr class="usuario">
+					      <td class="info-cpf">058.256.936.89</th>
+					      <td class="info-nome">Jamelão</td>
+					      <td class="info-email">@Thornton</td>
+					      <td class="info-pj">---</td>
+					      <td><a href="#" ><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    <tr class="usuario">
+					    <td class="info-cpf">358.256.936.63</td>
+					       <td class="info-nome">James</td>
+					       <td class="info-email">@Thornton</td>
+					       <td class="info-pj">MPDFT</td>
+					       <td><a href="#" ><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    <tr class="usuario">
+					      <td class="info-cpf">065.256.936.67</th>
+					      <td class="info-nome">Elias</td>
+					      <td class="info-email">@Otto</td>
+					      <td class="info-pj">---</td>
+					      <td><a href="#" ><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    <tr class="usuario">
+					      <td class="info-cpf">058.256.936.89</th>
+					      <td class="info-nome">Valadão</td>
+					      <td class="info-email">@Thornton</td>
+					      <td class="info-pj">---</td>
+					      <td><a href="#" ><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    <tr class="usuario">
+				 		   	<td class="info-cpf">358.256.936.63</th>
+					        <td class="info-nome">Nilson</td>
+						    <td class="info-email">@Thornton</td>
+						    <td class="info-pj">---</td>
+						    <td><a href="#" ><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    <tr class="usuario">
+				 		   	<td class="info-cpf">888.256.936.55</th>
+					        <td class="info-nome">Thiago</td>
+						    <td class="info-email">@Thornton</td>
+						    <td class="info-pj">---</td>
+						    <td><a href="#modal1" class="waves-effect waves-light btn modal-trigger"><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    
+			        </tbody>
+				</table>
+			  </section>
+			  
+	<!-- para contendo cadastros validados -->		  
+			  <section id="cad2" class="invisivel">
+	    		<div style="padding-top: 60px; padding-bottom: 15px">
+					<h5>Cadastros validados</h5>
+				</div>
+				<div class="row">
+		          <div class="input-field col s3">
+		            <input id="filtrar-tabela" type="text">
+		            <label for="filtrar-tabela">Pesquisar usuário</label>
+		          </div>
+		        </div>
+	    		<table class="responsive-table highlight">
+			      <thead>
+			        <tr class="table-success">
+				      <th scope="col">CPF</th>
+				      <th scope="col">Nome</th>
+				      <th scope="col">Email</th>
+				      <th scope="col">Vínculo PJ</th>
+				      <th scope="col">Visualizar</th>
+				    </tr>
+				  </thead>
+				  <tbody id="tabela-usuarios">
+			           <tr class="usuario">
+					      <td class="info-cpf">988.888.888.89</th>
+					      <td class="info-nome">Jose Apareceido</td>
+					      <td class="info-email">elias@mpf.mp.br</td>
+					      <td class="info-pj">ABIN</td>
+					      <td><a href="#" ><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    <tr class="usuario">
+					      <td class="info-cpf">058.256.936.89</th>
+					      <td class="info-nome">Jusleilando</td>
+					      <td class="info-email">jus@hotmail.com</td>
+					      <td class="info-pj">---</td>
+					      <td><a href="#" ><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    <tr class="usuario">
+					    <td class="info-cpf">358.256.936.63</td>
+					       <td class="info-nome">James</td>
+					       <td class="info-email">@Thornton</td>
+					       <td class="info-pj">MPDFT</td>
+					       <td><a href="#" ><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    <tr class="usuario">
+					      <td class="info-cpf">065.256.936.67</th>
+					      <td class="info-nome">Elias</td>
+					      <td class="info-email">@Otto</td>
+					      <td class="info-pj">---</td>
+					      <td><a href="#" ><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    <tr class="usuario">
+					      <td class="info-cpf">058.256.936.89</th>
+					      <td class="info-nome">Valadão</td>
+					      <td class="info-email">@Thornton</td>
+					      <td class="info-pj">---</td>
+					      <td><a href="#" ><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    <tr class="usuario">
+				 		   	<td class="info-cpf">358.256.936.63</th>
+					        <td class="info-nome">Nilson</td>
+						    <td class="info-email">@Thornton</td>
+						    <td class="info-pj">---</td>
+						    <td><a href="#" ><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    <tr class="usuario">
+				 		   	<td class="info-cpf">888.256.936.55</th>
+					        <td class="info-nome">Thiago</td>
+						    <td class="info-email">@Thornton</td>
+						    <td class="info-pj">---</td>
+ <!-- chama modal-->        <td><a href="#modal1" class="waves-effect waves-light btn modal-trigger"><i class="small material-icons">zoom_in</i></a></td>
+					    </tr>
+					    
+			        </tbody>
+				</table>
+			  </section>
+			
+			<!-- Modal para exibir um cadastro: pendentes de Validação -->
+					  <div id="modal1" class="modal modal-fixed-footer">
+					    <div class="modal-content">
+					      <h4>Dados cadastrais</h4>
+					      <form>
+					      	  <h6>Básicos</h6>
+							  <hr>     
+					      	  <div class="row">		  
+							      <div class="col s3">
+								      <label for="validationServer01">N° CPF</label>
+								      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nome" value="065.256.936.67" required>
+								  </div>
+								  <div class="col s3">
+								      <label for="validationServer02">Nome</label>
+								      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Sobrenome" value="Elias Ribeiro da Silva" disabled required>
+								  </div>
+								  <div class="col s3">
+								      <label for="validationServer02">Telefone</label>
+								      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Sobrenome" value="(61)98602-4286" required>
+								  </div>				  
+								  <div class="col s3">
+								      <label for="validationServer02">Email</label>
+								      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Sobrenome" value="elias@gmail.com" required>
+								  </div>
+							  </div>
+							  <div class="row"> 
+								  <div id="bbb-11" class="col s3" style="">
+										  <div class>
+										      <label for="validationServer01">CNPJ</label>
+										      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Nome" value="03.659.166/0001-45" required>
+										  </div>				  
+								  </div> 
+								 <div id="aaa-11" class="col s3">
+										  <div>
+										      <label for="validationServer01">Nº da OAB</label>
+										      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nome" value="036.452.45/0001-45" required>
+										  </div>				  
+								 </div>
+							 </div>
+					      	  
+					      	  
+					      	  
+
+							   <h6>Complementares</h6>
+							   <hr>
+							  <div class="row" style="padding-top:30px">
+							      <div class="col s2">
+							        <label for="validationServer01">Tipo de documento</label>
+								      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nome" value="Identidade" required>
+							      </div>
+							      <div class="col s2">
+							        <label for="validationServer01">Número do documento</label>
+								      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nome" value="2101663" required>
+							      </div>
+							      <div class="col s2">
+							       <label for="validationServer01">Órgão Expedidor</label>
+								      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nome" value="SSPDF" required>
+							      </div>
+							      <div class="col s3">
+							       <label for="validationServer01">Data expedição</label>
+								      <input type="date" class="form-control is-valid" id="validationServer01" placeholder="Nome" value="05/01/1984" required>
+							      </div>
+							      <div class="col s2">
+								      <button class="btn" style="background-color: red"><i class="small material-icons">picture_as_pdf</i></button>
+							      </div>
+							   </div>
+							   <div class="row">
+							      <div class="col s5">
+							        <label for="validationServer01">Endereço</label>
+								      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nome" value="Rua São João, nº 450, bairro Sagarana 4" required>
+							      </div>
+							      <div class="col s3">
+							        <label for="validationServer01">Complemento</label>
+								      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nome" value="Quadras mistas" required>
+							      </div>
+							      <div class="col s2">
+							       <label for="validationServer01">CEP</label>
+								      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nome" value="70675725" required>
+							      </div>
+							      <div class="col s2">
+							       <label for="validationServer01">Localização</label>
+								      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nome" value="Brasília: DF - Brasil" required>
+							      </div>
+							   </div>
+						  </form>
+					    </div>
+					    <div class="modal-footer">
+					      <a href="#!" class=" waves-green btn-flat modal-close waves-effect">Cancelar</a>
+					       <a href="#!" class=" waves-green btn-flat modal-close waves-effect">Rejeitar</a>
+					      <a href="#!" class="btn modal-close">Validar pré-cadastro</a>
+					    </div>
+					  </div>
+    	
+    	</section>
+    	
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="../webcontent/js/jquery.js"></script>
+      <script type="text/javascript" src="../webcontent/materialize/js/materialize.min.js"></script>
+       <script type="text/javascript" src="../webcontent/js/filtra.js"></script>
+       
+    </body>
+  </html>
